@@ -19,5 +19,5 @@ export const getAvailableCountries = () => {
 }
 
 export const withBasePath = (val) => {
-    return process.env.NEXT_PUBLIC_APP_ENV === 'production' ? `/okf-open-geodata-curriculum/${val}` : `${val}`;
+    return process.env.NEXT_PUBLIC_APP_ENV === 'production' ? `/open-geodata-curriculum/${val}` : `${val}`;
 };

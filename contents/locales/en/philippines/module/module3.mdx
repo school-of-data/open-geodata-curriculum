@@ -90,7 +90,7 @@ The ubiquity of maps in our lives is a byproduct of the sheer amount of location
 
 OpenStreetMap (OSM) ([https://www.openstreetmap.org/](https://www.openstreetmap.org/)) is a free, editable map of the whole world that is built by volunteers from across the globe and released with an open-content license. It is a project that creates and distributes free geographic data for the world -- a map of the world by the people and for the people. If something is missing on OSM, you are free to add it. If something is wrong in OSM, you are free to correct it. OSM is a digital common good that greatly amplifies the value of the information added to it.
 
-![OpenStreetMap website](/okf-open-geodata-curriculum/images/en/philippines/module3/media/osm.png "OpenStreetMap website")
+![OpenStreetMap website](/open-geodata-curriculum/images/en/philippines/module3/media/osm.png "OpenStreetMap website")
 
 Figure 3.1. OpenStreetMap
 
@@ -134,7 +134,7 @@ QuickOSM works by querying the tags (keys and values) of the features in OSM. Fo
 
 1. Load the Pampanga_province and Pampanga_SanFernando vector layers found inside the module3 geopackage.
 
-![Pampanga layers loaded in QGIS](/okf-open-geodata-curriculum/images/en/philippines/module3/media/quickosm-1.png "Pampanga layers loaded in QGIS")
+![Pampanga layers loaded in QGIS](/open-geodata-curriculum/images/en/philippines/module3/media/quickosm-1.png "Pampanga layers loaded in QGIS")
 
 Figure 3.2. Pampanga layers loaded in QGIS
 
@@ -157,7 +157,7 @@ Figure 3.2. Pampanga layers loaded in QGIS
     5. About:
         * Shows information about the plugin.
 
-![QuickOSM plugin](/okf-open-geodata-curriculum/images/en/philippines/module3/media/quickosm-2.png "QuickOSM plugin")
+![QuickOSM plugin](/open-geodata-curriculum/images/en/philippines/module3/media/quickosm-2.png "QuickOSM plugin")
 
 Figure 3.3. QuickOSM plugin
 
@@ -169,20 +169,20 @@ Figure 3.3. QuickOSM plugin
     * Advanced:
         * Check Node, Way, Relation, Lines, Multilinestrings
 
-![Load all highways in the Pampanga_SanFernando layer extent](/okf-open-geodata-curriculum/images/en/philippines/module3/media/quickosm-3.png "Load all highways in the Pampanga_SanFernando layer extent")
+![Load all highways in the Pampanga_SanFernando layer extent](/open-geodata-curriculum/images/en/philippines/module3/media/quickosm-3.png "Load all highways in the Pampanga_SanFernando layer extent")
 
 Figure 3.4. Load all highways in the Pampanga_SanFernando layer extent
 
 5. Click Run query. Basically what we’re telling QuickOSM is to get all line or multilinestring features tagged with a highway key and load it in QGIS. When the plugin is done loading the layer, your map should look like below:
 
-![Highway data loaded from OSM](/okf-open-geodata-curriculum/images/en/philippines/module3/media/quickosm-4.png "Highway data loaded from OSM")
+![Highway data loaded from OSM](/open-geodata-curriculum/images/en/philippines/module3/media/quickosm-4.png "Highway data loaded from OSM")
 
 Figure 3.5. Highway data loaded from OSM
 
 6. Note that the layers loaded by QuickOSM are temporary layers. You should save them as files or make them persistent if you need to use them later.
 7. If you want to see the Overpass query version of your Quick Query, click Show query and it will open the query in the Query tab. You can then edit your query to make it more complex.
 
-![The Overpass query version of the Quick query to load highways](/okf-open-geodata-curriculum/images/en/philippines/module3/media/quickosm-5.png "The Overpass query version of the Quick query to load highways")
+![The Overpass query version of the Quick query to load highways](/open-geodata-curriculum/images/en/philippines/module3/media/quickosm-5.png "The Overpass query version of the Quick query to load highways")
 
 Figure 3.6. The Overpass query version of the Quick query to load highways
 
@@ -194,13 +194,13 @@ Figure 3.6. The Overpass query version of the Quick query to load highways
     * Advanced:
         * Check Node, Way, Relation, Points
 
-![Load amenities (points) tagged as fast_food in the Pampanga_province layer extent](/okf-open-geodata-curriculum/images/en/philippines/module3/media/quickosm-6.png "Load amenities (points) tagged as fast_food in the Pampanga_province layer extent")
+![Load amenities (points) tagged as fast_food in the Pampanga_province layer extent](/open-geodata-curriculum/images/en/philippines/module3/media/quickosm-6.png "Load amenities (points) tagged as fast_food in the Pampanga_province layer extent")
 
 Figure 3.7: Load amenities (points) tagged as fast_food in the Pampanga_province layer extent
 
 9. The output should look something like below:
 
-![Fast food locations loaded from OSM](/okf-open-geodata-curriculum/images/en/philippines/module3/media/quickosm-7.png "Fast food locations loaded from OSM")
+![Fast food locations loaded from OSM](/open-geodata-curriculum/images/en/philippines/module3/media/quickosm-7.png "Fast food locations loaded from OSM")
 
 Figure 3.8: Fast food locations loaded from OSM
 
@@ -236,7 +236,7 @@ For the current iteration of the HRSL, seven maps/datasets for the distribution 
 6. Elderly (ages 60+) 
 7. Women of reproductive age (ages 15-49)
 
-![HRSL data on HDX](/okf-open-geodata-curriculum/images/en/philippines/module3/media/hdx.png "HRSL data on HDX")
+![HRSL data on HDX](/open-geodata-curriculum/images/en/philippines/module3/media/hdx.png "HRSL data on HDX")
 
 Figure 3.9: HRSL data on HDX
 
@@ -261,7 +261,7 @@ The HRSL data found on HDX comes in GeoTIFF (raster) and CSV (vector) format. Th
 
 1. Load the **HRSL_Pampanga_Population** raster file in QGIS.
 
-![The HRSL for Pampanga, Philippines](/okf-open-geodata-curriculum/images/en/philippines/module3/media/hrsl-1.png "The HRSL for Pampanga, Philippines")
+![The HRSL for Pampanga, Philippines](/open-geodata-curriculum/images/en/philippines/module3/media/hrsl-1.png "The HRSL for Pampanga, Philippines")
 
 Figure 3.10: The HRSL for Pampanga, Philippines
 
@@ -285,25 +285,25 @@ Using an Overpass query allows you to create more complex feature selection in Q
 
 1. Open the QuickOSM plugin and input the parameters we used for querying all fast foods.
 
-![QuickOSM parameters for loading fast foods in Pampanga](/okf-open-geodata-curriculum/images/en/philippines/module3/media/quickosm-6.png "QuickOSM parameters for loading fast foods in Pampanga")
+![QuickOSM parameters for loading fast foods in Pampanga](/open-geodata-curriculum/images/en/philippines/module3/media/quickosm-6.png "QuickOSM parameters for loading fast foods in Pampanga")
 
 Quick query to load all amenities tagged as fast food
 
 2. Click Show query.
 
-![Overpass version of the query](/okf-open-geodata-curriculum/images/en/philippines/module3/media/overpass-1.png "Overpass version of the query")
+![Overpass version of the query](/open-geodata-curriculum/images/en/philippines/module3/media/overpass-1.png "Overpass version of the query")
 
 Overpass to load all amenities tagged as fast food
 
 3. Edit the query and add the line **&lt;has-kv k="name" v="Jollibee"/>** after each &lt;has-kv k="amenity" v="fast_food"/> line.
 
-![Overpass query to load only fast foods named Jollibee](/okf-open-geodata-curriculum/images/en/philippines/module3/media/overpass-2.png "Overpass query to load only fast foods named Jollibee")
+![Overpass query to load only fast foods named Jollibee](/open-geodata-curriculum/images/en/philippines/module3/media/overpass-2.png "Overpass query to load only fast foods named Jollibee")
 
 Overpass query to load all amenities tagged as fast food whose name is Jollibee
 
 4. Click Run query. This should load just the amenities tagged as fast_food with the name Jollibee. The layer name will be OsmQuery.
 
-![Amenities tagged as fast food whose name is Jollibee loaded from OSM](/okf-open-geodata-curriculum/images/en/philippines/module3/media/overpass-3.png "Amenities tagged as fast food whose name is Jollibee loaded from OSM")
+![Amenities tagged as fast food whose name is Jollibee loaded from OSM](/open-geodata-curriculum/images/en/philippines/module3/media/overpass-3.png "Amenities tagged as fast food whose name is Jollibee loaded from OSM")
 
 Amenities tagged as fast food whose name is Jollibee loaded from OSM
 
