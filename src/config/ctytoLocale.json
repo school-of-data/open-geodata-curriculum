@@ -1,0 +1,15 @@
+{
+  "argentina": ["es"],
+  "australia": ["en"],
+  "bangladesh": ["en"],
+  "brazil": ["pt"],
+  "egypt": ["ar"],
+  "ethiopia": ["am", "en"],
+  "germany": ["de"],
+  "ghana": ["en"],
+  "india": ["en"],
+  "kenya": ["en"],
+  "mexico": ["es"],
+  "nigeria": ["en"],
+  "philippines": ["en"]
+}
