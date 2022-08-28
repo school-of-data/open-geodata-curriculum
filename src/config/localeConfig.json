@@ -1,5 +1,21 @@
 [
   {
+    "language": "ar",
+    "country": "united-arab-emirates",
+    "d_language": "Arabic",
+    "d_country": "United Arab Emirates",
+    "modules": [
+      "module0",
+      "module1",
+      "module2",
+      "module3",
+      "module4",
+      "module5",
+      "module6",
+      "module7"
+    ]
+  },
+  {
     "language": "en",
     "country": "philippines",
     "d_language": "English",

@@ -1,9 +1,9 @@
 module.exports = {
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ar'],
     defaultCountry: 'philippines',
-    countries: ['philippines']
+    countries: ['philippines', 'united-arab-emirates']
   },
   reloadOnPrerender: true
 }
