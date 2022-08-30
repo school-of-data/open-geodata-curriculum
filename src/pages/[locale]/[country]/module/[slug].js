@@ -27,7 +27,8 @@ export default function Homepage({ source, frontMatter }) {
   ]);
   const languageOptions = [
     { key: "en", value: "en", text: "English" },
-    { key: "ar", value: "ar", text: "Arabic" }
+    { key: "ar", value: "ar", text: "Arabic" },
+    { key: "ar", value: "es", text: "Spanish" }
   ];
 
   useEffect(() => {
