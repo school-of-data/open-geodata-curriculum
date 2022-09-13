@@ -3,7 +3,7 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en', 'ar', 'es'],
     defaultCountry: 'philippines',
-    countries: ['philippines', 'united-arab-emirates', 'mexico']
+    countries: ['kenya', 'mexico', 'philippines', 'united-arab-emirates',]
   },
   reloadOnPrerender: true
 }
