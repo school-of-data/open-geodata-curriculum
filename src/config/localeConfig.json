@@ -17,6 +17,25 @@
   },
   {
     "language": "en",
+    "country": "ethiopia",
+    "d_language": "English",
+    "d_country": "Ethiopia",
+    "modules": [
+      "module0",
+      "module1",
+      "module2",
+      "module3",
+      "module4",
+      "module5",
+      "module6",
+      "module7",
+      "module8",
+      "module9",
+      "module10"
+    ]
+  },
+  {
+    "language": "en",
     "country": "kenya",
     "d_language": "English",
     "d_country": "Kenya",
