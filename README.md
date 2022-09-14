@@ -84,6 +84,7 @@ The data used in the modules for each country can be found below:
 - Philippines - [Ben Hur Pintor](https://github.com/benhur07b), [Codrina Maria Ilie](https://github.com/Codrina), and [Ketty Adoch](https://github.com/kettyadoch)
 - South Africa - [Ketty Adoch](https://github.com/kettyadoch)
 - Sri Lanka - [Ben Hur Pintor](https://github.com/benhur07b)
+- United Arab Emirates - [Ali Rebaie](https://github.com/AliRebaie) 
 - Vietnam - [Quach Dong Thang](https://github.com/thangqd)
 
 
