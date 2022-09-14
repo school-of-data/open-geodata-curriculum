@@ -1,7 +1,7 @@
 # WE ARE CURRENTLY MIGRATING FROM AN OLD WEBSITE TO THIS NEW ONE
 
-The old curriculum repository (which contains all current localizations) can be found here: https://github.com/school-of-data/GIS-curriculum
-The old website (Jekyll-based) is at: https://school-of-data.github.io/GIS-curriculum/
+- The old curriculum repository (which contains all current localizations) can be found here: https://github.com/school-of-data/GIS-curriculum
+- The old website (Jekyll-based) is at: https://school-of-data.github.io/GIS-curriculum/
 
 ## FROM THE OLD WEBSITE/REPOSITORY
 
