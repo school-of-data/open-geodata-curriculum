@@ -64,7 +64,7 @@ The data used in the modules for each country can be found below:
 - [Ketty Adoch](https://github.com/kettyadoch) - Modules 4 - 7
 - [Codrina Maria Ilie](https://github.com/Codrina) - Modules 8 - 10
 
-### Editor
+### Curriculum Editor and Review
 
 - [Ben Hur Pintor](https://github.com/benhur07b)
 
