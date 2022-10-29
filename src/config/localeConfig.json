@@ -89,5 +89,23 @@
       "module8",
       "module9"
     ]
+  },
+  {
+    "language": "es",
+    "country": "argentina",
+    "d_language": "Spanish",
+    "d_country": "Argentina",
+    "modules": [
+      "module0",
+      "module1",
+      "module2",
+      "module3",
+      "module4",
+      "module5",
+      "module6",
+      "module7",
+      "module8",
+      "module9"
+    ]
   }
 ]
