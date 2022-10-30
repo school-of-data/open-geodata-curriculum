@@ -2,6 +2,7 @@
 
 body {
   font-family: "DM Sans", sans-serif;
+  text-align: left;
 }
 body ::-webkit-scrollbar {
   width: 0px;
