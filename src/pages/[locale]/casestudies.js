@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from "@src/lib/getShowcaseStatic";
-import showcaseData from "@src/data/showcasedata.json";
+import casestudiesData from "@src/data/casestudiesdata.json";
 import { showcaseDataParse } from "@src/lib/showcaseHelper";
 import useSizeQuery from "@src/hooks/useSizeQuery";
 import getLangname from "@src/config/nameCodes";
@@ -12,8 +12,8 @@ import MobileShowCase from "@src/components/MobileShowCase";
 
 const ShowCasePage = () => {
   const { isDesktop } = useSizeQuery();
-  const filters = showcaseDataParse(showcaseData);
-  const defaultIndices = [...Array(showcaseData.length).keys()];
+  const filters = showcaseDataParse(casestudiesData);
+  const defaultIndices = [...Array(casestudiesData.length).keys()];
   const [filteredRows, setFilteredRows] = useState(defaultIndices);
   const [filteredOptions, setFilteredOptions] = useState({});
   const router = useRouter();
@@ -120,14 +120,14 @@ const ShowCasePage = () => {
     setFilteredOptions({});
   };
 
-  const title = ['project_summary', 'read_full_report']
+  const title = ['casestudies_summary', 'read_full_casestudies']
 
   return (
     <LayoutComponent>
       {isDesktop ? (
         <DesktopShowCase
           filters={filters}
-          showcaseData={showcaseData}
+          showcaseData={casestudiesData}
           filteredRows={filteredRows}
           getOptions={getOptions}
           filterSelectHandler={filterSelectHandler}
@@ -137,12 +137,12 @@ const ShowCasePage = () => {
           tagSelectHandler={tagSelectHandler}
           resetFilters={resetFilters}
           title={title}
-          tagclass="tags purple"
+          tagclass="tags yellow"
         />
       ) : (
         <MobileShowCase
           filters={filters}
-          showcaseData={showcaseData}
+          showcaseData={casestudiesData}
           filteredRows={filteredRows}
           getOptions={getOptions}
           filterSelectHandler={filterSelectHandler}
@@ -152,7 +152,7 @@ const ShowCasePage = () => {
           tagSelectHandler={tagSelectHandler}
           resetFilters={resetFilters}
           title={title}
-          tagclass="tags purple"
+          tagclass="tags yellow"
         />
       )}
     </LayoutComponent>

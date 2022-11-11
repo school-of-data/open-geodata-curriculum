@@ -153,6 +153,14 @@ div.item {
   color: #fff;
 }
 
+.yellow {
+  background-color:#F4B91F
+}
+
+.purple {
+  background-color:#7D0069
+}
+
 .license svg {
   margin-right: 3px;
   position: relative;

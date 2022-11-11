@@ -14,6 +14,8 @@ import {
 import LayoutComponent from "@src/components/LayoutComponent";
 import useSizeQuery from "@src/hooks/useSizeQuery";
 import showcaseData from "@src/data/showcasedata.json";
+import tutorialData from "@src/data/tutorialdata.json";
+import casestudiesData from "@src/data/casestudiesdata.json";
 import { useRouter } from "next/router";
 import HeroSession from "@src/components/HeroSession";
 import { getLanguageOptions, getAvailableCountries, withBasePath } from '@src/lib/utils'
@@ -31,6 +33,8 @@ export default function Homepage({ source }) {
   const availableOptions = getAvailableCountries()
 
   const homeShowcase = showcaseData.slice(0, 4);
+  const homeTutorial = tutorialData.slice(0, 4);
+  const homeCasestudies = casestudiesData.slice(0, 4);
 
   const handleLangChange = (event, data) => {
     let orgPath = router.asPath;
@@ -81,6 +85,96 @@ export default function Homepage({ source }) {
             </Grid.Column>
           </Grid.Row>
         </Grid>
+        <div className="home-session">
+          <h3 className="blue-title">Tutorials</h3>
+          <Grid stackable columns={`${isDesktop ? "two" : "one"}`}>
+            {homeTutorial.map((v, i) => {
+              return (
+                <Grid.Column>
+                  <Grid stackable columns={`${isDesktop ? "two" : "one"}`} key={i}>
+                    <Grid.Column>
+                      <Image src={withBasePath(v.header_image)} alt={v.title} width="100%" />
+                    </Grid.Column>
+                    <Grid.Column>
+                      <h3>{v.title}</h3>
+                      <p>
+                        {v.country}, {v.language}
+                      </p>
+                      {/* <p>
+                       {v.project_summary}
+                      </p> */}
+                      {/* <Link href={`/${router.query.locale}/${showType()}${v.title.toLowerCase().replace(/ /g, "-").replace(/[^\wÄäÖöÜü-]+/g, "")}`}>
+                        <a><Button
+                          content={t("read_more")}
+                          primary /></a>
+                      </Link> */}
+                      <Button
+                        content={t("read_more")}
+                        primary
+                        onClick={() => router.push(`/${router.query.locale}/tutorial#${v.title.toLowerCase().replace(/ /g, "-").replace(/[^\wÄäÖöÜü-]+/g, "")}`)}
+                      />
+                    </Grid.Column>
+                  </Grid>
+                </Grid.Column>
+              );
+            })}
+          </Grid>
+          <div className="view-all-toolbar">
+            <Button
+              as="a"
+              onClick={() =>
+                router.push(`/${router.query.locale}/tutorial`)
+              }
+            >
+              {t("view_all_tutorial")}
+            </Button>
+          </div>
+        </div>
+        <div className="home-session">
+          <h3 className="blue-title">Case Studies</h3>
+          <Grid stackable columns={`${isDesktop ? "two" : "one"}`}>
+            {homeCasestudies.map((v, i) => {
+              return (
+                <Grid.Column>
+                  <Grid stackable columns={`${isDesktop ? "two" : "one"}`} key={i}>
+                    <Grid.Column>
+                      <Image src={withBasePath(v.header_image)} alt={v.title} width="100%" />
+                    </Grid.Column>
+                    <Grid.Column>
+                      <h3>{v.title}</h3>
+                      <p>
+                        {v.country}, {v.language}
+                      </p>
+                      {/* <p>
+                       {v.project_summary}
+                      </p> */}
+                      {/* <Link href={`/${router.query.locale}/${showType()}${v.title.toLowerCase().replace(/ /g, "-").replace(/[^\wÄäÖöÜü-]+/g, "")}`}>
+                        <a><Button
+                          content={t("read_more")}
+                          primary /></a>
+                      </Link> */}
+                      <Button
+                        content={t("read_more")}
+                        primary
+                        onClick={() => router.push(`/${router.query.locale}/casestudies#${v.title.toLowerCase().replace(/ /g, "-").replace(/[^\wÄäÖöÜü-]+/g, "")}`)}
+                      />
+                    </Grid.Column>
+                  </Grid>
+                </Grid.Column>
+              );
+            })}
+          </Grid>
+          <div className="view-all-toolbar">
+            <Button
+              as="a"
+              onClick={() =>
+                router.push(`/${router.query.locale}/casestudies`)
+              }
+            >
+              {t("view_all_casestudies")}
+            </Button>
+          </div>
+        </div>
         <div className="home-session">
           <h3 className="blue-title">Project Showcase</h3>
           <Grid stackable columns={`${isDesktop ? "two" : "one"}`}>
