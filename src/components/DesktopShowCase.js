@@ -15,6 +15,8 @@ const DesktopShowCase = ({
   setFilteredOptions,
   tagSelectHandler,
   resetFilters,
+  title,
+  tagclass,
 }) => {
 
   const { t } = useTranslation("common");
@@ -99,13 +101,13 @@ const DesktopShowCase = ({
                     </Grid.Column>
                     <Grid.Column width={12}>
                       <h3 className="blue-title">{row.title}</h3>
-                      <h4>{t("project_summary")}</h4>
+                      <h4>{t(`${title[0]}`)}</h4>
                       <p>{row.project_summary}</p>
                       <h4>{t('tools')}</h4>
                       <div style={{ display: "flex", direction: "row" }}>
                         {row.tools.split(",").map((tool, i) => (
                           <span
-                            className="tags"
+                            className={tagclass}
                             onClick={() => handleTag("tools", tool)}
                             key={i}
                           >
@@ -116,7 +118,7 @@ const DesktopShowCase = ({
                       <h4>{t("themes_keywords")}</h4>
                       {row.themes_keywords.split(",").map((tk, i) => (
                         <span
-                          className="tags"
+                          className={tagclass}
                           onClick={() => handleTag("themes_keywords", tk)}
                           key={i}
                         >
@@ -126,22 +128,29 @@ const DesktopShowCase = ({
                       <h4>{t("algorithms")}</h4>
                       {row.algorithms.split(",").map((alg, i) => (
                         <span
-                          className="tags"
+                          className={tagclass}
                           onClick={() => handleTag("algorithms", alg)}
                           key={i}
                         >
                           {alg}
                         </span>
                       ))}
-                      <h4>{t("datasets")}</h4>
-                      <p>{row.datasets}</p>
+                      {
+                        row.datasets ?
+                          <>
+                            <h4>{row.datasets ? t("datasets") : null}</h4>
+                            <p>{row.datasets}</p>
+                          </>
+                          :
+                          null
+                      }
                     </Grid.Column>
                   </Grid.Row>
                   <Grid.Row>
                     <Grid.Column width={12}></Grid.Column>
                     <Grid.Column width={4} align="right">
                       <a href={row.readmore} target="_blank">
-                        <Button primary>{t('read_full_report')}</Button>
+                        <Button primary>{t(`${title[1]}`)}</Button>
                       </a>
                     </Grid.Column>
                   </Grid.Row>

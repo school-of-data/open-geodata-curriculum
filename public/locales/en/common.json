@@ -9,7 +9,9 @@
   "select_curriculum_view": "Select the curriculum you want to view",
   "select_localization": "Select Localization",
   "read_more": "Read More",
-  "view_all_showcase": "View all Project Showcase",
+  "view_all_showcase": "View All Project Showcase",
+  "view_all_tutorial": "View All Tutorial",
+  "view_all_casestudies": "View All Case Studies",
   "filters": "Filters",
   "site_title": "Open Geodata Training Curriculum",
   "site_desc": "Data for Good at Meta has partnered with the Open Knowledge Foundation to design, develop, and deliver a training focused on how governments and nonprofits around the world can utilise free and open geospatial data and geospatial software. This website contains a training curriculum built around the powerful free and open source GIS, QGIS, for learning how to utilize free and open geospatial data such as OpenStreetMap (OSM) and Meta's High Resolution Settlement Layer (HRSL). The curriculum is localized for 16 countries and available in 7 languages (Amharic, Arabic, English, German, Portuguese, Spanish, and Vietnamese). You can select the language and country localization below.",
@@ -21,7 +23,11 @@
   "tools" : "Tools",
   "author": "Authors",
   "project_summary": "Project Summary",
+  "tutorial_summary": "Tutorial Summary",
+  "casestudies_summary": "Case Study Summary",
   "datasets": "Datasets",
   "read_full_report": "Read full report",
+  "read_full_tutorial": "Read full tutorial",
+  "read_full_casestudies": "Read full case study",
   "clear_all_filters": "Clear All filters"
 }
