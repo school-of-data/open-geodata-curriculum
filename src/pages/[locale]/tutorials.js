@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from "@src/lib/getShowcaseStatic";
-import tutorialData from "@src/data/tutorialdata.json";
+import tutorialsData from "@src/data/tutorialsdata.json";
 import { showcaseDataParse } from "@src/lib/showcaseHelper";
 import useSizeQuery from "@src/hooks/useSizeQuery";
 import getLangname from "@src/config/nameCodes";
@@ -12,8 +12,8 @@ import MobileShowCase from "@src/components/MobileShowCase";
 
 const ShowCasePage = () => {
   const { isDesktop } = useSizeQuery();
-  const filters = showcaseDataParse(tutorialData);
-  const defaultIndices = [...Array(tutorialData.length).keys()];
+  const filters = showcaseDataParse(tutorialsData);
+  const defaultIndices = [...Array(tutorialsData.length).keys()];
   const [filteredRows, setFilteredRows] = useState(defaultIndices);
   const [filteredOptions, setFilteredOptions] = useState({});
   const router = useRouter();
@@ -127,7 +127,7 @@ const ShowCasePage = () => {
       {isDesktop ? (
         <DesktopShowCase
           filters={filters}
-          showcaseData={tutorialData}
+          showcaseData={tutorialsData}
           filteredRows={filteredRows}
           getOptions={getOptions}
           filterSelectHandler={filterSelectHandler}
@@ -142,7 +142,7 @@ const ShowCasePage = () => {
       ) : (
         <MobileShowCase
           filters={filters}
-          showcaseData={tutorialData}
+          showcaseData={tutorialsData}
           filteredRows={filteredRows}
           getOptions={getOptions}
           filterSelectHandler={filterSelectHandler}

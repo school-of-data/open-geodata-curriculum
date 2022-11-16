@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Site-suitability analysis and the graphical modeler",
+      "header_image": "/tutorials/ssa_gm.png",
+      "country": "Philippines",
+      "language": "en",
+      "authors": "Ben Hur Pintor",
+      "project_summary": "A tutorial on how to perform a simple site suitability analysis in QGIS to find ind suitable sites for building a commercial area for students in the province of Albay based on the following criteria: (1) within 3 km from a primary road and (2) within 3 km from an existing school. It also includes a tutorial on how to use the graphical modeler in order to easily make the process automateable and replicable.",
+      "tools": "qgis",
+      "themes_keywords": "site suitability, graphical modeler, automation",
+      "readmore": "https://drive.google.com/drive/folders/1UDszMX29apmQYS_xAFxFQpgeAAHgy7-H?usp=sharing",
+      "algorithms": "buffer, intersection, clip, graphical modeler"
+    },
+    {
+      "title": "Network analysis in QGIS",
+      "header_image": "/tutorials/network.png",
+      "country": "Philippines",
+      "language": "en",
+      "authors": "Ben Hur Pintor",
+      "project_summary": "A tutorial on how to perform different kinds of network analyis in QGIS including: computing the shortest/fastest distance between two points, the service area of services, or the places that can be reached after a certain amount of time. The tutorial utilizes the built-in network analysis algorithms in QGIS as well as other plugins and providers that provide network analysis capabilities to QGIS such as the GRASS v.net.* algorithms and processing plugins such as QNEAT and ORS Tools.",
+      "tools": "qgis",
+      "themes_keywords": "network analysis, transportation, service area, vector data, isochrones",
+      "readmore": "https://drive.google.com/drive/folders/11gCMe4yttEc2JPmHDai3Sa08U7tgQ8VC?usp=sharing",
+      "algorithms": "network analysis, shortest path, fastest path, origin-destination, isochrones"
+    }
+  ]

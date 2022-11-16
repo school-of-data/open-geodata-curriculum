@@ -1,14 +1,26 @@
 [
     {
-      "title": "Title of the test case studies",
-      "header_image": "/casestudies/logo-test.png",
-      "country": "Dummy",
+      "title": "Designing a 15-minute city with QGIS and high resolution population data",
+      "header_image": "/casestudies/uae-15min.png",
+      "country": "United Arab Emirates",
       "language": "en",
-      "authors": "Dummy Author",
-      "project_summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "tools": "qgis, datawrapper",
-      "themes_keywords": "risk assessment, tropical cyclone, hazard, vulnerability, exposure",
-      "readmore": "https://docs.google.com/document/d/1jYX9XAi9_j1fbFtsYoKnhrOC6uNFQbkdoyt0PR7feas/edit?usp=sharing",
-      "algorithms": "buffer, extract by location, field calculator,graphical modeler"
+      "authors": "Ben Hur Pintor",
+      "project_summary": "During the Open Geodata training for the United Arab Emirates (UAE), a group composed of participants from the Federal Competitiveness and Statistics Centre (FCSC) and the Department of Digital Ajman (Ajman Digital) worked on a project about turning Ajman into a 15-minute city. Building on their shared interest in the use of data and advanced technologies to transform decision-making processes, the group decided to work on a tool that could help them explore this concept. This case study adapts and extends the work done by the aforementioned group and shows how high resolution population density maps together with open source Geographic Information System (GIS) can help in exploring and planning what it means to design a 15-minute city.",
+      "tools": "qgis",
+      "themes_keywords": "smart city, 15 minute city, sustainable development",
+      "readmore": "https://docs.google.com/document/d/1qWAjkl-3oORhniZqNJMGTvrjYL-_JNxlmrf1BoO_dtM/edit?usp=sharing",
+      "algorithms": "network analysis"
+    },
+    {
+      "title": "Mapping flood exposure in the Philippines",
+      "header_image": "/casestudies/phl-flood.png",
+      "country": "Philippines",
+      "language": "en",
+      "authors": "Ben Hur Pintor",
+      "project_summary": "In the Philippines, the University of the Philippines Resilience Institute (UPRI) combined Meta’s High Resolution Settlement Layer (HRSL) with recent census data (2020) of the province of Bataan in order to generate an updated settlement area and population density map layer of the province. Using this updated population layer, UPRI was able to calculate and present the flood-hazard exposed population in the different barangays of the province.",
+      "tools": "qgis",
+      "themes_keywords": "disasters, hazards, hazard mapping",
+      "readmore": "https://docs.google.com/document/d/1niHpQiyhbVF17poCWDbVIlf3A87PDUTiaQIr59zFC-U/edit?usp=sharing",
+      "algorithms": "intersection, vectorize, joins"
     }
   ]

@@ -14,7 +14,7 @@ import {
 import LayoutComponent from "@src/components/LayoutComponent";
 import useSizeQuery from "@src/hooks/useSizeQuery";
 import showcaseData from "@src/data/showcasedata.json";
-import tutorialData from "@src/data/tutorialdata.json";
+import tutorialsData from "@src/data/tutorialsdata.json";
 import casestudiesData from "@src/data/casestudiesdata.json";
 import { useRouter } from "next/router";
 import HeroSession from "@src/components/HeroSession";
@@ -33,7 +33,7 @@ export default function Homepage({ source }) {
   const availableOptions = getAvailableCountries()
 
   const homeShowcase = showcaseData.slice(0, 4);
-  const homeTutorial = tutorialData.slice(0, 4);
+  const homeTutorial = tutorialsData.slice(0, 4);
   const homeCasestudies = casestudiesData.slice(0, 4);
 
   const handleLangChange = (event, data) => {
@@ -98,7 +98,7 @@ export default function Homepage({ source }) {
                     <Grid.Column>
                       <h3>{v.title}</h3>
                       <p>
-                        {v.country}, {v.language}
+                        {v.language}
                       </p>
                       {/* <p>
                        {v.project_summary}
@@ -111,7 +111,7 @@ export default function Homepage({ source }) {
                       <Button
                         content={t("read_more")}
                         primary
-                        onClick={() => router.push(`/${router.query.locale}/tutorial#${v.title.toLowerCase().replace(/ /g, "-").replace(/[^\wÄäÖöÜü-]+/g, "")}`)}
+                        onClick={() => router.push(`/${router.query.locale}/tutorials#${v.title.toLowerCase().replace(/ /g, "-").replace(/[^\wÄäÖöÜü-]+/g, "")}`)}
                       />
                     </Grid.Column>
                   </Grid>
@@ -123,10 +123,10 @@ export default function Homepage({ source }) {
             <Button
               as="a"
               onClick={() =>
-                router.push(`/${router.query.locale}/tutorial`)
+                router.push(`/${router.query.locale}/tutorials`)
               }
             >
-              {t("view_all_tutorial")}
+              {t("View all Tutorials")}
             </Button>
           </div>
         </div>
